@@ -8,11 +8,6 @@ fake = Faker()
 app = Flask(__name__)
 
 
-@app.route("/")
-def index():
-    return 'Hello world!!!'
-
-
 @app.route("/requirements/")
 def read_requirements_file():
     return str(open_arequirements_file().read())
